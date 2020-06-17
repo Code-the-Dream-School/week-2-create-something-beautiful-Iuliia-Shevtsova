@@ -1,16 +1,102 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>title</title>
-  <meta name="author" content="name">
-  <meta name="description" content="description here">
-  <meta name="keywords" content="keywords,here">
-  <link rel="stylesheet" href="./css/float.css" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <title>Aircrafts</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="./css/float.css" type="text/css">
   </head>
   <body>
+    <header class="main-header">
+      <div class="nav container clearfix">
+        <ul class="left-nav">
+          <li><a href="#row-right">T-6 Texan</a></li>
+          <li><a href="#row-left">P-39 Aerocobra</a></li>
+          <li><a href="#first">P-40 Warhawk</a></li>
+          <li><a href="#second">P-47 Thunderbolt</a></li>
+          <li><a href="#third">TBF Avenger</a></li>
+        </ul>
+  
+        <ul class="right-nav">
+          <li><a href="./flexbox.html" class="name">Flexbox</a></li>
+          <li><img src="img/plane.jpg" alt="Profile" class="profile-img"></li>
+        </ul>
+        
+      </div>
+    </header><!--/.main-header-->   
+  
+    <div class="background-img">
+      <div class="container">
+        <img class="logo" src="img/logo.jpg" alt="City">
+        <h1 class="headline">Airplanes of World War II</h1>
+      </div>
+    </div><!--/.background-img-->
+  
+    <div class="container clearfix">
+      
+      <div class="row-right clearfix" id="row-right">
+        <img src="img/Texan.jpg" alt="Texan">
+        <h1>North American T-6 Texan</h1>
+        <p>The Texan served in the U.S. Army and Navy (as the SNJ) as an advanced trainer that taught pilots how to fly fighters with powerful engines and shoot while they were doing it. In service with Commonwealth countries as the Harvard, the T-6 is a favorite among warbird fans and has its own racing class at the National Championship Air Races in Reno, Nevada.</p>
+      </div>
+  
+      <div class="row-left clearfix" id="row-left">
+        <img src="img/Aerocobra.jpg" alt="Aerocobra">
+        <h1>Bell P-39 Aerocobra</h1>
+        <p>P-39s did their best work on the Eastern front, where Soviet pilots did battle with the Luftwaffe at medium altitude. A decision not to equip the Allison engine in the P-39 with a two-stage supercharger left it gasping for air at high altitudes.</p>
+      </div>
+  
+      <div class="first col" id="first">
+        <h2>Curtiss P-40 Warhawk</h2>
+        <figure>
+          <img class="" src="img/Warhawk.jpg" alt="Warhawk">
+          <figcaption>
+            An all-metal, 300 mph fighter, the P-40 was the frontline U.S. fighter when the war began. It was made famous by Claire Chennault’s Flying Tigers, who painted shark’s teeth on its nose.
+          </figcaption>
+        </figure>
+        <p>When Japan attacked Pearl Harbor, the only modern U.S. Army Air Force fighter stationed in Hawaii was the Curtiss P-40, an all-metal, 300-mph (if the pilot was lucky) 1934 design, updated by an inline Allison engine jammed in its snout. The P-40 was rapidly overtaken by far more capable fighters, but on December 7, 1941, the warplane boasted two winning features: In a dive, it was the fastest airplane in the world, and it was available.</p>
+      </div><!--/.first-->
+  
+      <div class="second col" id="second">
+        <h2>Republic P-47 Thunderbolt</h2>	
+        <figure>
+          <img class="" src="img/Thunderbolt.jpg" alt="Thunderbolt">
+          <figcaption>
+            <h1> </h1>
+            The heaviest single-engine aircraft of the war, the P-47 was a tail-sitter with wide-stance landing gear and flat-face radial engine giving it the look of an aggressive bull-dog.
+          </figcaption>
+        </figure>			
+        <p>In the months before Normandy, P-47 Thunderbolt pilots began using their fighters to bomb and strafe targets on the ground. After the P-51 Mustang arrived in England, the 56th Fighter Group, alone among the units of the Eighth Air Force, continued flying P-47s as bomber escorts; it remained the Eighth’s top-scoring group.
+          Among the T-bolt’s laurels are the attacks that helped repel the Nazi advance known as the Battle of the Bulge, the World War II battle that proved most costly for Americans.
+          </p>
+      </div><!--/.second-->
+      
+      <div class="third col clearfix" id="third">
+        <h2>Grumman TBF Avenger</h2>	
+        <figure>
+          <img class="" src="img/Avenger.jpg" alt="Avenger">
+          <figcaption>
+            The Grumman TBF, or TBM if one of the 7,546 built by General Motors’ Eastern Division, was a three-seat sub stalker and torpedo bomber that scored a big victory in the Battle of Guadalcanal.
+          </figcaption>
+        </figure>			
+        <p>In the months before Normandy, P-47 Thunderbolt pilots began using their fighters to bomb and strafe targets on the ground. After the P-51 Mustang arrived in England, the 56th Fighter Group, alone among the units of the Eighth Air Force, continued flying P-47s as bomber escorts; it remained the Eighth’s top-scoring group.
+          Among the T-bolt’s laurels are the attacks that helped repel the Nazi advance known as the Battle of the Bulge, the World War II battle that proved most costly for Americans.</p>
+      </div><!--/.second-->
+      <div class="social-media">
+        <a href="http://instagram.com/" ><img src="img/instagram.jpg" alt="not found" class="social-icons"> </a>
+        <a href="https://www.facebook.com/" ><img src="img/facebook.jpg" alt="not found" class="social-icons"></a>
+        </div>
+    </div><!--/.container-->
+  
+    <footer class="main-footer">
+      <span>footer</span>
+    </footer>
 
-  <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
