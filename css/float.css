@@ -201,7 +201,7 @@ figcaption {
 @media (min-width: 1000px) {	
 	.container {
 		width: 85%;
-		max-width: 1500px;
+		max-width: 1500px; 
 		margin: 0 auto;		
 	}
 	.left-nav li , .right-nav li{

@@ -24,9 +24,11 @@ h3,
 h4 {
 	margin-top: 0;
 }
+
 li {
-	margin: auto 0;
+	margin: auto;
 }
+
 ul {
 	list-style: none;
 }
@@ -61,6 +63,7 @@ figcaption {
 	margin-top: 0;
 	color: rgb(8, 151, 85);
 }
+
 .profile-img {
 	width: 40px;
 	height: 40px;
@@ -69,6 +72,12 @@ figcaption {
     box-shadow: lightgreen 0 0 5px 3px;
 	vertical-align: middle;
 }
+.right-nav,
+.left-nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 .right-nav {
 	margin-top: 10px;
 	justify-content: center;
@@ -82,7 +91,6 @@ figcaption {
 	flex-direction: column;
 	text-align: center;
 	padding: 10px 15px;
-	flex-wrap: wrap;
 }
 .left-nav a {
 	font-size: .95em;
@@ -111,13 +119,23 @@ figcaption {
 /* ---- Custom classes ---- */
 
 .main-header {
+	width: 100%;
 	position: fixed;
 	background: #fff;
 	box-shadow: 0 1px 4px rgba(0,0,0,.4);
 	width: 100%;
 	padding-top: 0;
 	z-index: 1000;
-	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
 }
 .main-footer {
 	text-align: center;
@@ -218,22 +236,34 @@ box-shadow: 0px 0px 8px 5px rgba(23, 104, 50, 0.8);
 
 /*** Media Queries ***/
 
-@media (min-width: 769px) {	
-    .main-header,
-    .right-nav,
+@media (min-width: 569px) {	
+	.main-header {
+        flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+
 	.left-nav,
+	.right-nav {
+		flex-direction: row;
+	}
+
+	.right-nav a,
+	.left-nav a {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	padding: 10px 15px;
+	}
+	
 	.container,
 	.social-media {
 		display: flex;
 		flex-wrap: wrap;
     }
-    .main-header {
-        flex-direction: column;
-        align-items: center;
-	}
+    
 	.container {
 		flex-direction: column;
-		width: 95%;
 		margin: auto;
 	}
 	.columns
@@ -246,13 +276,10 @@ box-shadow: 0px 0px 8px 5px rgba(23, 104, 50, 0.8);
     }
     .col {
         flex: 1;
-		flex-basis: 50%;
-		margin: 0 1.7%;
+		flex-basis: 300px;
+		margin: 3% 1.7%;
     }
-    .main-header{
-		width: 100%;
-		margin: 0 auto;
-    }
+
     .background-img{
         padding-top:  150px;
         padding-bottom: 5%;
@@ -273,17 +300,13 @@ box-shadow: 0px 0px 8px 5px rgba(23, 104, 50, 0.8);
 
 @media (min-width: 1025px) {
 	.main-header {
-		width: 80%;
-        max-width: 1350px;
         display: flex;
-    }
-    .main-header {
         flex-direction: row;
         justify-content: space-around;
         margin: 0 auto;
-        width:  100%;
       }
       .col {
         flex-basis: 0;
     }
+
 }
